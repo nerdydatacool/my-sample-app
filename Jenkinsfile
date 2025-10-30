@@ -18,7 +18,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Running tests...'
-                bat 'pytest || echo "No tests found"'
+                bat 'C:/Users/12013/anaconda3/python.exe -m pytest || echo "No tests found"'
             }
         }
 
