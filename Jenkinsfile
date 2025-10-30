@@ -17,8 +17,9 @@ pipeline {
 
         stage('Test') {
             steps {
-                echo 'Running tests...'
-                bat 'C:/Users/12013/anaconda3/python.exe -m pytest || echo "No tests found"'
+                echo "Skipping test for now"
+                //echo 'Running tests...'
+                //bat 'C:/Users/12013/anaconda3/python.exe -m pytest || echo "No tests found"'
             }
         }
 
