@@ -11,7 +11,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building the project...'
-                bat 'python -m py_compile app.py'
+                bat 'C:\Users\12013\anaconda3\python.exe -m py_compile app.py'
             }
         }
 
