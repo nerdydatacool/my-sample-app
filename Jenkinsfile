@@ -11,14 +11,14 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building the project...'
-                sh 'python -m py_compile app.py'
+                bat 'python -m py_compile app.py'
             }
         }
 
         stage('Test') {
             steps {
                 echo 'Running tests...'
-                sh 'pytest || echo "No tests found"'
+                bat 'pytest || echo "No tests found"'
             }
         }
 
